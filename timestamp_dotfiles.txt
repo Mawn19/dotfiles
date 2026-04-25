@@ -1,0 +1,8 @@
+2026.06.13 - 23:19
+I just created a .dotfiles folder and then stow.
+I run stow . and simlinked this file "timestamp_dotfiles.text"
+
+2026.06.16 - 23:10
+the folder was named .dotfiles. Now, renamed to ~/dotfiles
+I ll git init, set small structure and push to github.
+

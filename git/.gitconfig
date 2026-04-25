@@ -1,0 +1,11 @@
+﻿[user]
+	name = mawn@thinkpad
+	email = maarouf.youness@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = code --wait
+	pager = less -FRX
+	autocrlf = input
+[color]
+	ui = auto

@@ -1,0 +1,90 @@
+# Don't add an empty line before the prompt
+
+# --------------------------------
+# General
+# --------------------------------
+add_newline = false
+
+format = """
+[](fg:#D8D365)\
+$username\
+[](fg:#D8D365 bg:#5E81AC)\
+$directory\
+[](fg:#5E81AC bg:#B48EAD)\
+$git_branch\
+$git_status\
+[](fg:#B48EAD bg:#A3BE8C)\
+$cmd_duration\
+[](fg:#A3BE8C bg:#BF616A)\
+$status\
+[ ](fg:#BF616A)\
+$line_break\
+$character
+"""
+
+# --------------------------------
+# User
+# --------------------------------
+[username]
+show_always = true
+style_user = "fg:black bg:#D8D365"
+style_root = "fg:white bg:#BF616A"
+format = "[ $user ]($style)"
+
+# --------------------------------
+# Host (only via SSH)
+# --------------------------------
+[hostname]
+ssh_only = true
+style = "fg:black bg:#3B4252"
+format = "[ @$hostname ]($style)"
+
+# --------------------------------
+# Directory
+# --------------------------------
+[directory]
+style = "fg:black bg:#5E81AC"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncate_to_repo = true
+truncation_symbol = "…/"
+
+# --------------------------------
+# Git Branch
+# --------------------------------
+[git_branch]
+symbol = ""
+style = "fg:black bg:#B48EAD"
+format = "[ $symbol $branch ]($style)"
+
+# --------------------------------
+# Git Status
+# --------------------------------
+[git_status]
+style = "fg:black bg:#B48EAD"
+format = "[ $all_status$ahead_behind ]($style)"
+
+# --------------------------------
+# Command Duration
+# --------------------------------
+[cmd_duration]
+min_time = 500
+style = "fg:black bg:#A3BE8C"
+format = "[ took $duration ]($style)"
+
+# --------------------------------
+# Exit Status (only shows on error)
+# --------------------------------
+[status]
+disabled = true
+symbol = "✗"
+success_symbol = ""
+style = "fg:white bg:#BF616A"
+format = "[ $symbol$status ]($style)"
+
+# --------------------------------
+# Prompt Character
+# --------------------------------
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
