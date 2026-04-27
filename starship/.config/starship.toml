@@ -7,7 +7,7 @@ add_newline = false
 
 format = """
 [](fg:#D8D365)\
-$username\
+$username$hostname\
 [](fg:#D8D365 bg:#5E81AC)\
 $directory\
 [](fg:#5E81AC bg:#B48EAD)\
@@ -35,9 +35,9 @@ format = "[ $user ]($style)"
 # Host (only via SSH)
 # --------------------------------
 [hostname]
-ssh_only = true
-style = "fg:black bg:#3B4252"
-format = "[ @$hostname ]($style)"
+ssh_only = false
+style = "fg:black bg:#D8D365"
+format = "[@ $hostname ]($style)"
 
 # --------------------------------
 # Directory

@@ -8,9 +8,6 @@
 # ---------------------------------------------------------
 [[ $- != *i* ]] && return
 
-# Complete command names and file names
-#complete -cf sudo
-
 # ---------------------------------------------------------
 # 2. Environment Variables
 # ---------------------------------------------------------
@@ -64,6 +61,8 @@ alias ....='cd ../../..'
 alias one='cd ~/home/mawn/OneWareStudio/Projects/myFirstOneWareProject'
 alias uno='cd ~/Documents/GitWSinEOS/rpi4_to_uno/'
 alias rpi4='ssh -p 22 mawn@rpi4-homelab'
+
+alias dot='cd ~/dotfiles'
 #alias proj='cd ~/projects'
 #alias fpga='cd ~/projects/fpga'
 #alias embedded='cd ~/projects/embedded'
@@ -90,28 +89,6 @@ alias gcm='git commit -m'
 mkcd() {
     mkdir -p "$1" && cd "$1"
 }
-
-# Extract any archive
-extract() {
-    if [ -f "$1" ]; then
-        case "$1" in
-            *.tar.bz2) tar xjf "$1" ;;
-            *.tar.gz)  tar xzf "$1" ;;
-            *.bz2)     bunzip2 "$1" ;;
-            *.rar)     unrar x "$1" ;;
-            *.gz)      gunzip "$1" ;;
-            *.tar)     tar xf "$1" ;;
-            *.tbz2)    tar xjf "$1" ;;
-            *.tgz)     tar xzf "$1" ;;
-            *.zip)     unzip "$1" ;;
-            *.7z)      7z x "$1" ;;
-            *)         echo "Unknown format" ;;
-        esac
-    else
-        echo "File not found"
-    fi
-}
-
 # ---------------------------------------------------------
 # 8. Prompt (Starship)
 # ---------------------------------------------------------
