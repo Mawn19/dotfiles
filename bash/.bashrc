@@ -61,14 +61,16 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # Quick jump (edit paths to your workflow)
-alias one='cd ~/home/mawn/OneWareStudio/Projects/myFirstOneWareProject'
-alias uno='cd ~/Documents/GitWSinEOS/rpi4_to_uno/'
+alias one='cd ~/Projects/OneWareStudio/Projects/'
+alias uno='cd ~/Projects/GitWSinEOS/rpi4_to_uno/'
 alias rpi4='ssh -p 22 mawn@rpi4-homelab'
 
 alias dot='cd ~/dotfiles'
 #alias proj='cd ~/projects'
 #alias fpga='cd ~/projects/fpga'
 #alias embedded='cd ~/projects/embedded'
+
+alias veri='code ~/Projects/GitWSinEOS/Verilog_in_VSCode'
 
 # ---------------------------------------------------------
 # 6. Git Productivity
