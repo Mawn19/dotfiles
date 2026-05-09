@@ -1,0 +1,18 @@
+{
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "{hexdiff}:/**/*.*": "hexEditor.hexedit",
+        "*.vcd": "wavetrace.vcd"
+    },
+    "workbench.colorTheme": "Solarized Light",
+    "files.associations": {
+        "*.{a80,z80,asm,inc,s}": "asm-collection",
+        "*.{list,lis}": "asm-collection-list"
+    },
+    "editor.formatOnSave": true,
+    "verilog.icarusTestbenchIncludes": [],
+    "files.autoSave": "afterDelay",
+    "vaporview.scrollingMode": "Auto",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true
+}
