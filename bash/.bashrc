@@ -39,6 +39,7 @@ shopt -s autocd    # cd without typing cd
 # ---------------------------------------------------------
 alias apt='sudo apt update && sudo apt upgrade' # rpi4
 alias pac='sudo pacman -Syu'                    # thinkpad and alike
+alias yay='yay -Syu'				# 
 
 alias ls='ls --color=auto -F'
 alias ll='ls -la' #-lah
