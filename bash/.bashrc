@@ -30,16 +30,18 @@ PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 #----------------------------------------------------------
 # 3. Safety & Defaults
 # ---------------------------------------------------------
-set -o noclobber   # prevent overwriting files with >
+set -o noclobber # prevent overwriting files with >
 shopt -s checkwinsize
-shopt -s autocd    # cd without typing cd
+shopt -s autocd # cd without typing cd
 
 # ---------------------------------------------------------
 # 4. Aliases (General)
 # ---------------------------------------------------------
 alias apt='sudo apt update && sudo apt upgrade' # rpi4
 alias pac='sudo pacman -Syu'                    # thinkpad and alike
-alias yay='yay -Syu'				# 
+#alias yay='yay -Syu'				#
+
+alias clr='clear'
 
 alias ls='ls --color=auto -F'
 alias ll='ls -la' #-lah
@@ -93,7 +95,7 @@ alias gcm='git commit -m'
 
 # Create and enter directory
 mkcd() {
-    mkdir -p "$1" && cd "$1"
+  mkdir -p "$1" && cd "$1"
 }
 # ---------------------------------------------------------
 # 8. Prompt (Starship)
