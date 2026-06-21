@@ -107,5 +107,8 @@ eval "$(starship init bash)"
 # ---------------------------------------------------------
 [ -f ~/.bashrc.local ] && source ~/.bashrc.local
 
+#source oss-suite so the tools like yosys are available
+source ~/Projects/ossWS/oss-cad-suite/environment
+
 # Created by `pipx` on 2026-04-13 18:51:05
 export PATH="$PATH:/home/mawn/.local/bin"
