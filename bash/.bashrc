@@ -39,6 +39,8 @@ shopt -s autocd # cd without typing cd
 # ---------------------------------------------------------
 alias apt='sudo apt update && sudo apt upgrade' # rpi4
 alias pac='sudo pacman -Syu'                    # thinkpad and alike
+alias wg1='sudo wg-quick up wg0'
+alias wg0='sudo wg-quick down wg0'
 #alias yay='yay -Syu'				#
 
 alias clr='clear'
